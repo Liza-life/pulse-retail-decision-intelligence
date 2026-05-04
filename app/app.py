@@ -4,10 +4,7 @@ import plotly.express as px
 import numpy as np
 import os
 
-st.set_page_config(
-    page_title="Pulse | Retail Decision Intelligence",
-    layout="wide"
-)
+st.set_page_config(page_title="Pulse | Retail Decision Intelligence", layout="wide")
 
 # =====================================================
 # CORES
@@ -36,7 +33,7 @@ CATEGORY_COLORS = {
 }
 
 # =====================================================
-# FUNÇÃO DE DADOS (CORRIGIDA PARA CLOUD)
+# LOAD DATA (CORRIGIDO PARA CLOUD)
 # =====================================================
 @st.cache_data
 def load_data():
@@ -70,27 +67,6 @@ def plot(fig):
 
 
 # =====================================================
-# IA SIMULADA
-# =====================================================
-def resposta_ia(pergunta, ctx):
-    p = pergunta.lower()
-
-    if "receita" in p:
-        return f"A receita total foi {moeda(ctx['receita'])}."
-
-    if "lucro" in p:
-        return f"O lucro foi {moeda(ctx['lucro'])} com margem de {ctx['margem']:.1%}."
-
-    if "estoque" in p:
-        return f"Existem {ctx['criticos']} produtos em estado crítico."
-
-    if "produto" in p:
-        return f"O produto destaque é {ctx['top_produto']}."
-
-    return "Analise receita, margem e estoque para melhores decisões."
-
-
-# =====================================================
 # LOAD
 # =====================================================
 df, df_produtos = load_data()
@@ -102,44 +78,24 @@ clientes = df["cliente_id"].nunique()
 
 vendas_mes = df.groupby("mes", as_index=False)["valor_total"].sum()
 
-top_produto = (
-    df.groupby("nome")["valor_total"]
-    .sum()
-    .sort_values(ascending=False)
-    .index[0]
-)
-
-estoque_tmp = df_produtos.copy()
-estoque_tmp["status"] = estoque_tmp.apply(
-    lambda x: "Crítico" if x["estoque_atual"] <= x["estoque_minimo"]
-    else "Atenção" if x["estoque_atual"] <= x["estoque_minimo"] * 1.5
-    else "Saudável",
-    axis=1
-)
-
-ctx = {
-    "receita": receita,
-    "lucro": lucro,
-    "margem": margem,
-    "top_produto": top_produto,
-    "criticos": len(estoque_tmp[estoque_tmp["status"] == "Crítico"])
-}
-
 # =====================================================
 # HEADER
 # =====================================================
-st.title("🧠 Pulse | Retail Decision Intelligence")
+st.markdown("# 🧠 Pulse | Retail Decision Intelligence")
 
 # =====================================================
 # ABAS
 # =====================================================
 tabs = st.tabs([
     "📊 Executivo",
+    "📈 Receita",
     "📦 Estoque",
     "🧠 Inteligência",
-    "🤖 IA",
-    "📈 Forecast",
-    "📊 Qualidade"
+    "🤖 IA Analítica",
+    "📉 Forecast",
+    "🧪 Simulador",
+    "📊 Qualidade",
+    "ℹ️ Sobre"
 ])
 
 # =====================================================
@@ -156,28 +112,65 @@ with tabs[0]:
     plot(fig)
 
 # =====================================================
-# ESTOQUE
+# RECEITA
 # =====================================================
 with tabs[1]:
-    estoque = df_produtos.copy()
-
-    estoque["status"] = estoque_tmp["status"]
-    status = estoque["status"].value_counts().reset_index()
-    status.columns = ["status", "qtd"]
+    receita_cat = df.groupby("categoria", as_index=False)["valor_total"].sum()
 
     fig = px.bar(
-        status,
-        x="status",
-        y="qtd",
-        color="status",
-        color_discrete_map=STATUS_COLORS
+        receita_cat,
+        x="categoria",
+        y="valor_total",
+        color="categoria",
+        color_discrete_map=CATEGORY_COLORS
     )
     plot(fig)
 
 # =====================================================
-# ABC
+# ESTOQUE
 # =====================================================
 with tabs[2]:
+    estoque = df_produtos.copy()
+
+    estoque["status"] = estoque.apply(
+        lambda x: "Crítico" if x["estoque_atual"] <= x["estoque_minimo"]
+        else "Atenção" if x["estoque_atual"] <= x["estoque_minimo"] * 1.5
+        else "Saudável",
+        axis=1
+    )
+
+    estoque["valor_estoque"] = estoque["estoque_atual"] * estoque["preco"]
+
+    status_count = estoque["status"].value_counts().reset_index()
+    status_count.columns = ["status", "qtd"]
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        fig = px.bar(
+            status_count,
+            x="status",
+            y="qtd",
+            color="status",
+            color_discrete_map=STATUS_COLORS
+        )
+        plot(fig)
+
+    with col2:
+        fig = px.bar(
+            estoque.sort_values("valor_estoque", ascending=False).head(10),
+            x="valor_estoque",
+            y="nome",
+            orientation="h",
+            color="categoria",
+            color_discrete_map=CATEGORY_COLORS
+        )
+        plot(fig)
+
+# =====================================================
+# INTELIGÊNCIA (ABC)
+# =====================================================
+with tabs[3]:
     abc = df.groupby("nome")["valor_total"].sum().reset_index()
     abc = abc.sort_values("valor_total", ascending=False)
 
@@ -205,18 +198,25 @@ with tabs[2]:
     plot(fig)
 
 # =====================================================
-# IA
+# IA ANALÍTICA
 # =====================================================
-with tabs[3]:
-    pergunta = st.text_input("Pergunte algo:")
+with tabs[4]:
+    pergunta = st.text_input("Pergunte algo sobre os dados:")
 
     if pergunta:
-        st.success(resposta_ia(pergunta, ctx))
+        if "receita" in pergunta.lower():
+            st.success(f"A receita foi {moeda(receita)}")
+        elif "lucro" in pergunta.lower():
+            st.success(f"O lucro foi {moeda(lucro)}")
+        elif "estoque" in pergunta.lower():
+            st.success("Existem itens críticos que precisam reposição")
+        else:
+            st.info("Analise receita, lucro, estoque e produtos")
 
 # =====================================================
 # FORECAST
 # =====================================================
-with tabs[4]:
+with tabs[5]:
     vendas_mes = vendas_mes.sort_values("mes")
     vendas_mes["idx"] = range(len(vendas_mes))
 
@@ -232,7 +232,6 @@ with tabs[4]:
 
     hist = vendas_mes.copy()
     hist["tipo"] = "Histórico"
-
     futuro["tipo"] = "Forecast"
 
     plot_df = pd.concat([hist, futuro])
@@ -241,9 +240,17 @@ with tabs[4]:
     plot(fig)
 
 # =====================================================
+# SIMULADOR
+# =====================================================
+with tabs[6]:
+    aumento = st.slider("Aumento de vendas (%)", 0, 100, 10)
+    nova_receita = receita * (1 + aumento / 100)
+    st.metric("Receita Projetada", moeda(nova_receita))
+
+# =====================================================
 # QUALIDADE
 # =====================================================
-with tabs[5]:
+with tabs[7]:
     st.metric("Registros", len(df))
     st.metric("Colunas", len(df.columns))
     st.metric("Nulos", df.isnull().sum().sum())
@@ -254,3 +261,21 @@ with tabs[5]:
 
     fig = px.bar(nulls, x="coluna", y="qtd")
     plot(fig)
+
+# =====================================================
+# SOBRE
+# =====================================================
+with tabs[8]:
+    st.markdown("""
+    Plataforma de Decision Intelligence para varejo.
+
+    Inclui:
+    - Receita e lucro
+    - Estoque
+    - Curva ABC
+    - Forecast
+    - IA analítica
+    - Qualidade de dados
+    """)
+
+st.caption("Pulse | Retail Decision Intelligence")
