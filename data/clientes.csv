@@ -1,0 +1,301 @@
+cliente_id,nome_cliente,cidade,tipo_cliente
+1,Rhavi Guerra,São Paulo,VIP
+2,Kaique Leão,Osasco,VIP
+3,Raquel Pacheco,Osasco,Novo
+4,Nicolas Carvalho,Guarulhos,Recorrente
+5,Clarice Rezende,Barueri,VIP
+6,Anna Liz Dias,Santo André,Novo
+7,Ryan Abreu,Barueri,Novo
+8,Luísa Montenegro,Osasco,Novo
+9,Gustavo da Luz,Barueri,Recorrente
+10,Rafael Cavalcanti,Barueri,Novo
+11,Ian Correia,Osasco,VIP
+12,Diego Abreu,Barueri,Novo
+13,Heloisa Fonseca,Guarulhos,Recorrente
+14,Rodrigo Casa Grande,Guarulhos,Novo
+15,Hellena Brito,Barueri,Novo
+16,Sr. Breno Fernandes,Osasco,VIP
+17,Ana Cecília Melo,Santo André,VIP
+18,Davi Macedo,Barueri,VIP
+19,Marcos Vinicius Gomes,Santo André,Recorrente
+20,Renan Carvalho,Santo André,Recorrente
+21,Luísa Cardoso,Barueri,Novo
+22,Sophia Vargas,Osasco,VIP
+23,André Gomes,Guarulhos,Novo
+24,Isis Campos,São Paulo,Novo
+25,Manuella Almeida,Osasco,VIP
+26,Vitor Andrade,Osasco,VIP
+27,Sra. Isabela Mendes,Guarulhos,VIP
+28,Sr. Pietro Freitas,São Paulo,Recorrente
+29,Isaque Teixeira,Guarulhos,VIP
+30,Anthony Gabriel Rezende,Guarulhos,VIP
+31,Arthur Miguel Vieira,Barueri,VIP
+32,Mariane da Mota,São Paulo,VIP
+33,Maysa Ferreira,São Paulo,VIP
+34,Gabriela Sousa,Santo André,Recorrente
+35,Manuela da Mota,Barueri,Novo
+36,Yago Nascimento,Barueri,Recorrente
+37,Dr. Ravi Cavalcanti,Osasco,Recorrente
+38,Sr. Antônio Siqueira,São Paulo,VIP
+39,Sra. Catarina Fernandes,Barueri,VIP
+40,Sra. Caroline Rezende,Osasco,VIP
+41,Raul da Cruz,São Paulo,VIP
+42,Danilo Andrade,Barueri,VIP
+43,Kaique Pimenta,Santo André,VIP
+44,Pietro Moreira,Osasco,Novo
+45,Thales Fernandes,Barueri,Novo
+46,Erick Aparecida,Santo André,VIP
+47,Maria Laura Gonçalves,São Paulo,VIP
+48,Mariane Costa,Barueri,Recorrente
+49,Anna Liz Nascimento,São Paulo,Novo
+50,Paulo Fernandes,Barueri,Recorrente
+51,Dra. Milena da Paz,Osasco,Novo
+52,Sra. Sabrina Sousa,Osasco,VIP
+53,Pedro Miguel Gomes,São Paulo,Novo
+54,Dr. Thiago Ribeiro,Guarulhos,Novo
+55,Luiz Miguel Albuquerque,Santo André,Novo
+56,Francisco Fogaça,Osasco,VIP
+57,Sr. João Felipe Garcia,Guarulhos,VIP
+58,Ísis Mendonça,Osasco,Recorrente
+59,Maria Vitória Farias,Santo André,VIP
+60,Lara Cunha,Guarulhos,Novo
+61,Dra. Allana Alves,Santo André,VIP
+62,Apollo Cassiano,Osasco,VIP
+63,Maria Isis Montenegro,Barueri,Recorrente
+64,Isabella Borges,Barueri,Recorrente
+65,Lavínia Azevedo,Santo André,Recorrente
+66,Dr. Luan Oliveira,São Paulo,Novo
+67,Murilo da Luz,Osasco,Novo
+68,Nathan Cavalcanti,Barueri,Novo
+69,Valentina Lima,Santo André,VIP
+70,Maria Júlia Sales,Osasco,VIP
+71,Dr. Matheus Nogueira,Osasco,Novo
+72,Gael Vasconcelos,São Paulo,VIP
+73,Theodoro Almeida,São Paulo,Novo
+74,Ana Júlia Pastor,São Paulo,Novo
+75,Henrique Sampaio,Barueri,Novo
+76,Gael Lima,Santo André,Novo
+77,Rafaela Azevedo,Barueri,VIP
+78,Emanuelly Cassiano,Guarulhos,Novo
+79,Thiago Brito,Santo André,Novo
+80,Rebeca Jesus,Santo André,VIP
+81,Oliver Dias,Guarulhos,Novo
+82,Isaac Melo,Guarulhos,Recorrente
+83,Dr. Rael Montenegro,Osasco,Novo
+84,Isaque da Rosa,São Paulo,VIP
+85,Lunna Aragão,Guarulhos,Recorrente
+86,Felipe Moura,Guarulhos,Recorrente
+87,Brayan Vieira,Guarulhos,VIP
+88,Ayla Rocha,São Paulo,VIP
+89,Luiz Miguel Pastor,São Paulo,Novo
+90,Ravi Lucca Duarte,Guarulhos,VIP
+91,Sr. Murilo Marques,Barueri,Novo
+92,Maria Júlia Rios,Osasco,Novo
+93,Erick Cirino,Osasco,VIP
+94,Alice Câmara,Guarulhos,Novo
+95,Anthony Cirino,Guarulhos,Novo
+96,Asafe Freitas,Barueri,Recorrente
+97,Ana Laura Leão,Osasco,Novo
+98,Asafe Azevedo,Guarulhos,VIP
+99,Elisa Souza,São Paulo,Novo
+100,Sophie Novais,Santo André,Novo
+101,Davi Miguel Sales,São Paulo,Novo
+102,Sr. Asafe Marques,Osasco,Recorrente
+103,Gabriela Novais,Guarulhos,Recorrente
+104,Gael Henrique Caldeira,Osasco,Recorrente
+105,João Guilherme Freitas,São Paulo,Novo
+106,Arthur Miguel da Mata,Guarulhos,Novo
+107,Emanuelly Cardoso,Guarulhos,Recorrente
+108,Zoe Cassiano,Guarulhos,Recorrente
+109,Eloah Barbosa,Guarulhos,VIP
+110,Sr. Mathias da Costa,Santo André,VIP
+111,Giovanna Pastor,Guarulhos,Novo
+112,Luara Monteiro,Osasco,Recorrente
+113,Luiz Henrique da Paz,Osasco,Novo
+114,Leonardo Moura,Santo André,VIP
+115,Arthur Pires,Santo André,Novo
+116,Dr. Lucas Duarte,Barueri,Novo
+117,Antonella Brito,São Paulo,VIP
+118,Pedro Miguel Nascimento,Guarulhos,VIP
+119,Yan Monteiro,Santo André,Novo
+120,Guilherme Andrade,São Paulo,VIP
+121,Henrique Teixeira,São Paulo,Novo
+122,Evelyn Porto,São Paulo,VIP
+123,Lucas Gabriel Albuquerque,São Paulo,VIP
+124,Dra. Camila Peixoto,Osasco,Recorrente
+125,Emilly Barros,São Paulo,VIP
+126,Sophia Fogaça,Osasco,VIP
+127,Maria Fernanda da Mota,Santo André,Novo
+128,Bianca Cavalcanti,Santo André,Novo
+129,Bruno da Rosa,Guarulhos,VIP
+130,Ester Almeida,Santo André,VIP
+131,Luiz Felipe da Rosa,Santo André,Recorrente
+132,Dr. José Miguel Caldeira,Barueri,Novo
+133,Bella Moura,Barueri,Novo
+134,Olivia da Mota,Barueri,Recorrente
+135,Sr. Paulo Rezende,Osasco,VIP
+136,Sr. Théo Santos,Barueri,Recorrente
+137,Rafaela Campos,Barueri,Novo
+138,Cecilia Novaes,São Paulo,Recorrente
+139,Emilly Barbosa,Santo André,VIP
+140,Gabriela Vasconcelos,São Paulo,Novo
+141,Bruna Carvalho,Santo André,Novo
+142,Evelyn Rezende,Santo André,Recorrente
+143,Caio Alves,Osasco,Recorrente
+144,Maria Flor Sá,São Paulo,Novo
+145,João Guilherme Garcia,Barueri,Recorrente
+146,Luiz Henrique Alves,Osasco,Recorrente
+147,Ana Sophia Jesus,Santo André,VIP
+148,Igor Rezende,Barueri,VIP
+149,Ana Júlia Nogueira,Santo André,Novo
+150,Pedro Miguel Cirino,Santo André,Recorrente
+151,Luna Pimenta,São Paulo,Novo
+152,Maria Helena Brito,Barueri,Novo
+153,Lucca Almeida,São Paulo,VIP
+154,Isabela Cardoso,Santo André,Novo
+155,Kaique das Neves,Barueri,Recorrente
+156,Benjamim Brito,Santo André,Novo
+157,Otto Azevedo,Barueri,Novo
+158,Luna Barros,Barueri,VIP
+159,Henry Duarte,Guarulhos,Recorrente
+160,Agatha Farias,São Paulo,Novo
+161,Sr. Diogo Almeida,Guarulhos,Recorrente
+162,Ana Cecília Abreu,São Paulo,Novo
+163,Dr. Anthony Gabriel Peixoto,Barueri,Novo
+164,Sra. Luara Macedo,Barueri,Novo
+165,Srta. Joana Nogueira,Guarulhos,VIP
+166,Isis Marques,Guarulhos,VIP
+167,Dante Garcia,São Paulo,Novo
+168,Ana Luiza da Cunha,São Paulo,VIP
+169,Bárbara Cunha,Osasco,VIP
+170,Anna Liz Carvalho,São Paulo,Recorrente
+171,Hadassa Costa,Santo André,VIP
+172,Ana Laura Brito,Osasco,Recorrente
+173,Dante Ribeiro,Osasco,Novo
+174,Dra. Helena Cardoso,Barueri,Recorrente
+175,Heloisa Lopes,São Paulo,Recorrente
+176,Ana Júlia da Conceição,Osasco,VIP
+177,Luan Ribeiro,Osasco,VIP
+178,Eloá Pimenta,São Paulo,Recorrente
+179,Daniela Vasconcelos,Santo André,Recorrente
+180,Bella Cavalcanti,Santo André,VIP
+181,Daniela da Cruz,Osasco,Novo
+182,Daniel Marques,Osasco,Novo
+183,Vinicius da Paz,Guarulhos,Novo
+184,João Lucas Cardoso,Osasco,VIP
+185,Augusto da Rocha,Barueri,Recorrente
+186,Larissa da Rosa,Osasco,Recorrente
+187,Dante Gonçalves,Osasco,VIP
+188,Dante Barros,São Paulo,Recorrente
+189,Srta. Ayla Mendonça,São Paulo,Recorrente
+190,Maria Alice Fonseca,Osasco,Novo
+191,Lívia Rezende,Guarulhos,Recorrente
+192,Mariana da Rosa,Barueri,Novo
+193,Kamilly Garcia,Osasco,Novo
+194,Nicolas Nogueira,Osasco,Recorrente
+195,Léo Montenegro,Barueri,Recorrente
+196,Olivia Mendes,São Paulo,Recorrente
+197,Augusto Cunha,Barueri,VIP
+198,Hellena Ferreira,Santo André,Recorrente
+199,Diego Aragão,Santo André,Recorrente
+200,Davi Lucca Ferreira,São Paulo,Novo
+201,Théo Jesus,Barueri,Novo
+202,Augusto da Mota,Santo André,Recorrente
+203,João Guilherme Farias,São Paulo,Novo
+204,Benício Mendes,Santo André,Recorrente
+205,Luiz Felipe Freitas,Barueri,VIP
+206,Srta. Ana Lívia Sá,Barueri,Recorrente
+207,Théo Cardoso,Santo André,VIP
+208,Marcelo Rodrigues,São Paulo,Recorrente
+209,Olívia da Rosa,Santo André,Novo
+210,Dra. Caroline Viana,Barueri,Novo
+211,Stephany Novaes,Guarulhos,Novo
+212,Murilo Cavalcante,Santo André,VIP
+213,Arthur Guerra,Osasco,Recorrente
+214,Sarah Brito,Guarulhos,Novo
+215,Caio Nogueira,Barueri,VIP
+216,Luiz Gustavo Jesus,Barueri,VIP
+217,Sophie da Rocha,São Paulo,VIP
+218,Alana Cirino,Barueri,VIP
+219,Yan Nogueira,Barueri,VIP
+220,Nicole Pires,Guarulhos,Recorrente
+221,Alana Pimenta,Guarulhos,VIP
+222,Gustavo Henrique Rodrigues,Barueri,VIP
+223,Ana Julia Pimenta,Osasco,Novo
+224,Eloah Sousa,Guarulhos,VIP
+225,João Moraes,Guarulhos,VIP
+226,João Guilherme Almeida,Osasco,VIP
+227,Aurora Camargo,Santo André,Recorrente
+228,Rhavi Nogueira,Guarulhos,VIP
+229,Srta. Manuella Novais,São Paulo,Recorrente
+230,Lara Câmara,Barueri,Novo
+231,Aylla Dias,Guarulhos,VIP
+232,Carolina Rios,Santo André,VIP
+233,Cecilia Santos,Barueri,Recorrente
+234,Luana Cassiano,Guarulhos,Recorrente
+235,Valentim Ribeiro,Osasco,VIP
+236,Manuella Abreu,Guarulhos,VIP
+237,Srta. Maria Costa,Osasco,VIP
+238,Kamilly Brito,São Paulo,Recorrente
+239,Luana Jesus,Santo André,VIP
+240,Dra. Marina Moreira,Santo André,Recorrente
+241,Luna Teixeira,São Paulo,Novo
+242,Sr. Matheus Borges,Barueri,Novo
+243,Dr. Ravi Farias,Osasco,Novo
+244,Ana Vitória Moura,São Paulo,Novo
+245,Dr. Luiz Otávio Guerra,Osasco,Recorrente
+246,Caroline Mendes,Santo André,Novo
+247,Maria Fernanda Vieira,Guarulhos,Recorrente
+248,Dr. Lucas Gabriel Marques,Santo André,Novo
+249,Anna Liz Machado,Guarulhos,Recorrente
+250,Nina da Mota,Guarulhos,Novo
+251,Juan Borges,Osasco,VIP
+252,Augusto Fogaça,São Paulo,Novo
+253,Isabelly Sousa,Guarulhos,Novo
+254,Josué das Neves,Osasco,VIP
+255,Heloísa Cavalcanti,Santo André,Recorrente
+256,Felipe da Cruz,São Paulo,VIP
+257,Sr. Cauê Leão,Osasco,Novo
+258,Davi Lucas Cirino,Guarulhos,Novo
+259,Sr. João Felipe Garcia,Guarulhos,VIP
+260,Lívia da Mata,Santo André,VIP
+261,Luísa Santos,Santo André,Recorrente
+262,Mariana Novaes,Guarulhos,VIP
+263,Maria Helena Caldeira,Santo André,Recorrente
+264,Antonella Teixeira,Santo André,Recorrente
+265,Apollo Santos,Osasco,VIP
+266,Maria Flor Ferreira,Guarulhos,Recorrente
+267,Lucas Mendes,Barueri,Novo
+268,Zoe da Mota,Barueri,VIP
+269,Ana Laura Vieira,Guarulhos,VIP
+270,Luiz Fernando Fonseca,Osasco,Recorrente
+271,Ana Clara Caldeira,Guarulhos,Novo
+272,Rafael Sales,Barueri,Novo
+273,Sr. João Gabriel Ramos,Barueri,Recorrente
+274,Antônio Pacheco,Barueri,VIP
+275,Alexandre Barbosa,São Paulo,Novo
+276,Maria Fernanda Fonseca,Osasco,Novo
+277,Mariana Pereira,Guarulhos,VIP
+278,Yasmin Machado,Osasco,VIP
+279,Diogo Moreira,Osasco,Novo
+280,Caleb Fogaça,Guarulhos,Recorrente
+281,Juan Mendonça,Barueri,VIP
+282,Luísa Pinto,Guarulhos,Recorrente
+283,Ana Júlia Câmara,São Paulo,Novo
+284,Nathan Siqueira,Guarulhos,Recorrente
+285,Dra. Maria Sophia Alves,Santo André,VIP
+286,Enzo Gabriel da Mota,São Paulo,VIP
+287,Amanda Correia,Guarulhos,Recorrente
+288,Diogo Aparecida,São Paulo,Recorrente
+289,Srta. Isis Nunes,Barueri,Recorrente
+290,Sra. Maria Eduarda da Cunha,Guarulhos,VIP
+291,Isis Casa Grande,Santo André,VIP
+292,Heloísa Marques,Osasco,Recorrente
+293,Bárbara Novaes,Osasco,Recorrente
+294,Emanuella Pastor,Guarulhos,Recorrente
+295,Sabrina Freitas,São Paulo,Recorrente
+296,Dra. Alexia da Luz,Barueri,VIP
+297,Rhavi Costela,Guarulhos,VIP
+298,Vinícius Brito,Osasco,Recorrente
+299,Bernardo Pimenta,Osasco,VIP
+300,Dra. Ana Vitória Carvalho,Santo André,Novo

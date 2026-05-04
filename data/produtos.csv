@@ -1,0 +1,31 @@
+produto_id,nome,categoria,preco,custo,margem_percentual,fornecedor,estoque_atual,estoque_minimo
+1,Arroz 5kg,Alimentos,28.9,22.54,0.22,Bebidas São Paulo,48,16
+2,Feijão Carioca 1kg,Alimentos,8.9,6.68,0.25,Bebidas São Paulo,90,30
+3,Açúcar 1kg,Alimentos,5.2,4.26,0.18,Atacado Brasil,55,21
+4,Café 500g,Alimentos,18.9,13.23,0.3,Bebidas São Paulo,209,49
+5,Macarrão 500g,Alimentos,4.9,3.82,0.22,Distribuidora Alpha,171,42
+6,Óleo de Soja 900ml,Alimentos,7.8,6.4,0.18,Distribuidora Alpha,27,20
+7,Leite Integral 1L,Bebidas,5.6,4.48,0.2,Atacado Brasil,79,47
+8,Refrigerante 2L,Bebidas,9.5,6.84,0.28,Higiene Prime,26,50
+9,Suco Natural 1L,Bebidas,12.9,8.38,0.35,Atacado Brasil,203,56
+10,"Água Mineral 1,5L",Bebidas,3.2,2.4,0.25,Bebidas São Paulo,159,41
+11,Cerveja Lata 350ml,Bebidas,4.5,3.06,0.32,Atacado Brasil,134,52
+12,Detergente 500ml,Limpeza,2.8,1.82,0.35,Mega Foods,227,15
+13,Sabão em Pó 1kg,Limpeza,14.9,10.43,0.3,Atacado Brasil,198,42
+14,Desinfetante 2L,Limpeza,8.5,5.69,0.33,Mega Foods,91,24
+15,Água Sanitária 1L,Limpeza,4.2,3.02,0.28,Atacado Brasil,215,36
+16,Papel Higiênico 12un,Higiene,18.9,13.8,0.27,Distribuidora Alpha,43,39
+17,Shampoo 350ml,Higiene,16.9,10.14,0.4,Distribuidora Alpha,111,37
+18,Condicionador 350ml,Higiene,17.9,11.1,0.38,Higiene Prime,87,17
+19,Creme Dental 90g,Higiene,6.5,4.23,0.35,Bebidas São Paulo,137,49
+20,Sabonete 90g,Higiene,3.2,2.18,0.32,Distribuidora Alpha,116,20
+21,Frango Congelado 1kg,Carnes,16.9,13.18,0.22,Higiene Prime,95,55
+22,Carne Bovina 1kg,Carnes,42.9,32.17,0.25,Higiene Prime,246,38
+23,Linguiça Toscana 1kg,Carnes,24.9,17.93,0.28,Higiene Prime,69,60
+24,Queijo Mussarela 500g,Frios,22.9,16.03,0.3,Distribuidora Alpha,31,57
+25,Presunto 500g,Frios,18.9,13.61,0.28,Atacado Brasil,217,33
+26,Iogurte 1L,Laticínios,9.9,6.93,0.3,Distribuidora Alpha,238,29
+27,Manteiga 200g,Laticínios,12.5,8.5,0.32,Distribuidora Alpha,117,32
+28,Ovos 12un,Hortifruti,13.9,10.56,0.24,Fresh Market,182,38
+29,Banana 1kg,Hortifruti,6.9,4.49,0.35,Atacado Brasil,114,37
+30,Tomate 1kg,Hortifruti,8.9,6.23,0.3,Atacado Brasil,191,32
